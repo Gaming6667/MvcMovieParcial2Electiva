@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MvcMovieParcial2Electiva.Data;
 
@@ -11,9 +12,10 @@ using MvcMovieParcial2Electiva.Data;
 namespace MvcMovieParcial2Electiva.Migrations
 {
     [DbContext(typeof(MvcMovieParcial2ElectivaContext))]
-    partial class MvcMovieParcial2ElectivaContextModelSnapshot : ModelSnapshot
+    [Migration("20220421165421_Rating")]
+    partial class Rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
